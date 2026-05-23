@@ -1,0 +1,19 @@
+FROM python:3.11-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    curl \
+    gcc \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip install --no-cache-dir platformio
+
+WORKDIR /project
+
+# Copy only the config so this layer is cached — re-runs only when platformio.ini changes
+COPY platformio.ini .
+
+# Pre-download the ESP32-S3 toolchain + all libraries into the image layer (~600MB, one-time cost)
+RUN pio pkg install
+
+CMD ["pio", "run"]
