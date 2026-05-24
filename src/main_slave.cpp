@@ -19,7 +19,7 @@
 
 U8G2_SSD1306_128X64_NONAME_F_HW_I2C display(U8G2_R0, OLED_RST, OLED_SCL, OLED_SDA);
 SX1262    radio = new Module(LORA_NSS, LORA_DIO1, LORA_RST, LORA_BUSY);
-MSRCSlave msrc(radio);
+MSRCSlave msrc(radio, LORA_DIO1);
 
 static SemaphoreHandle_t displayMutex;
 static char dispLine1[32] = "waiting...";
@@ -82,7 +82,7 @@ void protocolTask(void *) {
     Serial.println("[slave] msrc init OK, CTS=true — entering poll loop");
 
     while (true) {
-        msrc.poll(100);
+        msrc.poll(300);
     }
 }
 

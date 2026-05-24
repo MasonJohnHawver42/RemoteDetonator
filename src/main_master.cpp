@@ -19,7 +19,7 @@
 
 U8G2_SSD1306_128X64_NONAME_F_HW_I2C display(U8G2_R0, OLED_RST, OLED_SCL, OLED_SDA);
 SX1262     radio = new Module(LORA_NSS, LORA_DIO1, LORA_RST, LORA_BUSY);
-MSRCMaster msrc(radio);
+MSRCMaster msrc(radio, LORA_DIO1);
 
 static SemaphoreHandle_t displayMutex;
 static char dispLine1[32] = "";
@@ -69,7 +69,7 @@ void protocolTask(void *) {
     Serial.println("[master] msrc init OK — entering poll loop");
 
     while (true) {
-        msrc.poll(100);
+        msrc.poll(300);
     }
 }
 
@@ -122,9 +122,13 @@ void appTask(void *) {
         if (!got) {
             Serial.printf("[master] TIMEOUT — no fib(%u) response\n", n);
             setDisplay(line1, "rx timeout");
+            vTaskDelay(pdMS_TO_TICKS(300));
+            continue; // retry same n — slave will drain its TX on next HB
         } else if (msg.len != sizeof(uint64_t)) {
             Serial.printf("[master] bad response len=%u expected 8\n", msg.len);
             setDisplay(line1, "bad len");
+            vTaskDelay(pdMS_TO_TICKS(300));
+            continue; // retry same n
         } else {
             uint64_t fib;
             memcpy(&fib, msg.data, sizeof(fib));
