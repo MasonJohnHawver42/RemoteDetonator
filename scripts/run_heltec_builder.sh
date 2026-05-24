@@ -5,4 +5,7 @@ SCRIPT_DIR=$(dirname "$(realpath "${BASH_SOURCE[0]}")")
 REPO_DIR=$(dirname "$SCRIPT_DIR")
 
 cd $REPO_DIR
-podman run --rm -v $(pwd):/project:Z heltec-builder
+podman run --rm \
+    -v $(pwd):/project:Z \
+    -v /home/matthew/work/msrc-maclink:/project/lib/msrc-maclink:Z \
+    heltec-builder
