@@ -1,0 +1,575 @@
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+E (89) opi psram: PSRAM ID read error: 0x00000000, PSRAM chip not found or not supported, or wrong PSRAM line mode
+E (90) spiram: SPI RAM enabled but initialization failed. Bailing out.
+[master] boot
+[master] protocolTask start
+[master] appTask start â waiting 2s for radio
+[master] tasks created
+[btn] gpio 46 PRESSED
+[btn] gpio 39 PRESSED
+[lml] init: registering ISR + startReceive
+[lml] init done
+[master] mac init OK â polling
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[master] â INIT (press a button)
+[master] â STANDBY pair=0 (slot 0 dev 1)
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[btn] raw gpio46=0 gpio39=0
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+E (89) opi psram: PSRAM ID read error: 0x00000000, PSRAM chip not found or not supported, or wrong PSRAM line mode
+E (90) spiram: SPI RAM enabled but initialization failed. Bailing out.
+[master] boot
+[master] protocolTask start
+[master] appTask start â waiting 2s for radio
+[scan] LOW: 39
+[master] tasks created
+[lml] init: registering ISR + startReceive
+[lml] init done
+[master] mac init OK â polling
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[master] â INIT (press a button)
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan] LOW: 39
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+E (89) opi psram: PSRAM ID read error: 0x00000000, PSRAM chip not found or not supported, or wrong PSRAM line mode
+E (90) spiram: SPI RAM enabled but initialization failed. Bailing out.
+[master] boot
+[master] protocolTask start
+[master] appTask start â waiting 2s for radio
+[master] tasks created
+[scan PU] LOW: (none)
+[lml] init: registering ISR + startReceive
+[lml] init done
+[master] mac init OK â polling
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[master] â INIT (press a button)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PU] LOW: (none)
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+E (89) opi psram: PSRAM ID read error: 0x00000000, PSRAM chip not found or not supported, or wrong PSRAM line mode
+E (90) spiram: SPI RAM enabled but initialization failed. Bailing out.
+[master] boot
+[master] protocolTask start
+[master] appTask start â waiting 2s for radio
+[master] tasks created
+[scan PU] LOW: 40 42
+[lml] init: registering ISR + startReceive
+[lml] init done
+[master] mac init OK â polling
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[master] â INIT (press a button)
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PD] HIGH: 0
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[scan PU] LOW: 40 42
+[master] â†’ INIT (press a button)
+[master] â†’ STANDBY pair=0 (slot 0 dev 1)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+E (89) opi psram: PSRAM ID read error: 0x00000000, PSRAM chip not found or not supported, or wrong PSRAM line mode
+E (90) spiram: SPI RAM enabled but initialization failed. Bailing out.
+[master] boot
+[master] protocolTask start
+[master] appTask start â waiting 2s for radio
+[master] tasks created
+[btn] gpio 42 PRESSED
+[btn] gpio 40 PRESSED
+[lml] init: registering ISR + startReceive
+[lml] init done
+[master] mac init OK â€” polling
+[master] â†’ INIT (press a button)
+[master] â†’ STANDBY pair=0 (slot 0 dev 1)
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+E (89) opi psram: PSRAM ID read error: 0x00000000, PSRAM chip not found or not supported, or wrong PSRAM line mode
+E (90) spiram: SPI RAM enabled but initialization failed. Bailing out.
+[master] boot
+[master] protocolTask start
+[master] appTask start â waiting 2s for radio
+[master] tasks created
+[lml] init: registering ISR + startReceive
+[lml] init done
+[master] mac init OK â polling
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[master] â INIT (press a button)
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+E (89) opi psram: PSRAM ID read error: 0x00000000, PSRAM chip not found or not supported, or wrong PSRAM line mode
+E (90) spiram: SPI RAM enabled but initialization failed. Bailing out.
+[master] boot
+[master] protocolTask start
+[master] appTask start â waiting 2s for radio
+[master] tasks created
+[lml] init: registering ISR + startReceive
+[lml] init done
+[master] mac init OK â polling
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[master] â INIT (press a button)
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=0 gpio40=0
+[btn] raw gpio42=1 gpio40=1
+[btn] raw gpio42=1 gpio40=1
+[bat] raw=0 vbat=0.00
+[btn] raw gpio42=1 gpio40=1
+[btn] raw gpio42=1 gpio40=1
+[btn] raw gpio42=1 gpio40=1
+[bat] raw=0 vbat=0.00
+[btn] raw gpio42=1 gpio40=1
+[btn] raw gpio42=1 gpio40=1
+[bat] raw=0 vbat=0.00
+[btn] raw gpio42=1 gpio40=1
+[btn] raw gpio42=1 gpio40=1
+[bat] raw=0 vbat=0.00
+[btn] raw gpio42=1 gpio40=1
+[btn] raw gpio42=1 gpio40=1
+[bat] raw=0 vbat=0.00
+[btn] raw gpio42=1 gpio40=1
+[btn] raw gpio42=1 gpio40=1
+[bat] raw=0 vbat=0.00
+[btn] raw gpio42=1 gpio40=1
+[btn] raw gpio42=1 gpio40=1
+[bat] raw=0 vbat=0.00
+[btn] raw gpio42=1 gpio40=1
+[btn] raw gpio42=1 gpio40=1
+[bat] raw=0 vbat=0.00
+[btn] raw gpio42=1 gpio40=1
+[btn] raw gpio42=1 gpio40=1

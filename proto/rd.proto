@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+package rd;
+
+message Ping {}
+message Pong {}
+
+// ── Firing protocol ──────────────────────────────────────────────────────────
+// Every firing message is addressed by (slot, device_id) and carries an
+// action_id that is unique for the lifetime of the master binary. The slave
+// echoes the action_id back so the master can match a response to the exact
+// command it sent.
+
+message Arm {
+  uint32 slot      = 1;
+  uint32 device_id = 2;
+  uint32 action_id = 3;
+}
+message Armed {
+  uint32 slot      = 1;
+  uint32 device_id = 2;
+  uint32 action_id = 3;
+}
+// Sent by the slave when an Arm targets a slot that has already fired.
+message Disarmed {
+  uint32 slot      = 1;
+  uint32 device_id = 2;
+  uint32 action_id = 3;
+}
+
+message Fire {
+  uint32 slot      = 1;
+  uint32 device_id = 2;
+  uint32 action_id = 3;
+}
+message Fired {
+  uint32 slot      = 1;
+  uint32 device_id = 2;
+  uint32 action_id = 3;
+}
+message Misfired {
+  uint32 slot      = 1;
+  uint32 device_id = 2;
+  uint32 action_id = 3;
+}
+
+// Slave-originated, device-scoped status messages.
+message Nack  { uint32 device_id = 1; }   // Fire on a slot that is not armed
+message Error { uint32 device_id = 1; }   // slave failed to send an Armed reply
+
+// Master → slave: return slot(s) to IDLE. slot == 0 resets every slot on the
+// device; otherwise only the named slot is reset.
+message Reset {
+  uint32 slot      = 1;   // 0 = all slots on device_id
+  uint32 device_id = 2;
+  uint32 action_id = 3;
+}
+
+message Envelope {
+  uint32 seq = 1;
+  oneof payload {
+    Ping     ping     = 10;
+    Pong     pong     = 11;
+    Arm      arm      = 12;
+    Armed    armed    = 13;
+    Disarmed disarmed = 14;
+    Fire     fire     = 15;
+    Fired    fired    = 16;
+    Reset    reset    = 17;
+    Misfired misfired = 18;
+    Nack     nack     = 19;
+    Error    error    = 20;
+  }
+}

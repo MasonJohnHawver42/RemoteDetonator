@@ -4,16 +4,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     curl \
     gcc \
+    protobuf-compiler \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache-dir platformio
+# intelhex is a runtime dep of PlatformIO's bundled esptool (tool-esptoolpy);
+# without it the .elf → .bin step fails with an intelhex ImportError.
+RUN pip install --no-cache-dir platformio protobuf grpcio-tools intelhex
 
 WORKDIR /project
 
-# Copy only the config so this layer is cached — re-runs only when platformio.ini changes
-COPY platformio.ini .
-
-# Pre-download the ESP32-S3 toolchain + all libraries into the image layer (~600MB, one-time cost)
-RUN pio pkg install
-
-CMD ["pio", "run"]
+# The project (incl. platformio.ini) and the LoraMacLink lib are bind-mounted at runtime by
+# run_heltec_builder.sh, so nothing is copied in here. Deps + toolchain are installed on the
+# first run and reused via the persisted PlatformIO core dir (a volume mounted at run time).
+CMD pio pkg install && pio run
