@@ -1,0 +1,12 @@
+# nanopb static-allocation bounds for all repeated fields.
+# max_count must equal NUM_SLOTS on both master and slave (currently 4).
+
+rd.Reset.slots                       max_count:4
+rd.MultiArm.slots                    max_count:4
+rd.ArmResponse.slots_armed           max_count:4
+rd.ArmResponse.slots_already_fired   max_count:4
+rd.ArmResponse.slots_failed          max_count:4
+rd.MultiFire.slots                   max_count:4
+rd.MultiFire.durations_ms            max_count:4
+rd.FireResponse.slots_fired          max_count:4
+rd.FireResponse.slots_failed         max_count:4

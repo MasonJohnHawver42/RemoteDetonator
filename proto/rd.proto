@@ -5,70 +5,73 @@ package rd;
 message Ping {}
 message Pong {}
 
-// ── Firing protocol ──────────────────────────────────────────────────────────
-// Every firing message is addressed by (slot, device_id) and carries an
-// action_id that is unique for the lifetime of the master binary. The slave
-// echoes the action_id back so the master can match a response to the exact
-// command it sent.
+// ── Multi-slot firing protocol ───────────────────────────────────────────────
+// One Arm/Fire exchange per device per sequence. Repeated fields are bounded
+// by the static max_count in rd.options (= 4 slots).
+// bool success is placed last in each message so it does not introduce a
+// padding byte before the next pb_size_t (uint16) count field.
 
-message Arm {
-  uint32 slot      = 1;
-  uint32 device_id = 2;
-  uint32 action_id = 3;
-}
-message Armed {
-  uint32 slot      = 1;
-  uint32 device_id = 2;
-  uint32 action_id = 3;
-}
-// Sent by the slave when an Arm targets a slot that has already fired.
-message Disarmed {
-  uint32 slot      = 1;
-  uint32 device_id = 2;
-  uint32 action_id = 3;
+// Master → slave: arm a list of slots.
+// fire_timeout_ms is how long the slave should hold slots armed while the
+// master finishes arming remaining devices and begins the fire phase.
+message MultiArm {
+  uint32          device_id       = 1;
+  uint32          action_id       = 2;
+  repeated uint32 slots           = 3;
+  uint32          fire_timeout_ms = 4;
 }
 
-message Fire {
-  uint32 slot      = 1;
-  uint32 device_id = 2;
-  uint32 action_id = 3;
-}
-message Fired {
-  uint32 slot      = 1;
-  uint32 device_id = 2;
-  uint32 action_id = 3;
-}
-message Misfired {
-  uint32 slot      = 1;
-  uint32 device_id = 2;
-  uint32 action_id = 3;
+// Slave → master: outcome of a MultiArm.
+// success is true only if every requested slot was armed.
+message ArmResponse {
+  uint32          device_id           = 1;
+  uint32          action_id           = 2;
+  repeated uint32 slots_armed         = 3;
+  repeated uint32 slots_already_fired = 4;
+  repeated uint32 slots_failed        = 5;
+  bool            success             = 6;
 }
 
-// Slave-originated, device-scoped status messages.
-message Nack  { uint32 device_id = 1; }   // Fire on a slot that is not armed
-message Error { uint32 device_id = 1; }   // slave failed to send an Armed reply
+// Master → slave: fire a list of slots (only those in ArmResponse.slots_armed).
+// durations_ms[i] is how long to keep power on for slots[i] in milliseconds.
+message MultiFire {
+  uint32          device_id    = 1;
+  uint32          action_id    = 2;
+  repeated uint32 slots        = 3;
+  repeated uint32 durations_ms = 4;
+}
 
-// Master → slave: return slot(s) to IDLE. slot == 0 resets every slot on the
-// device; otherwise only the named slot is reset.
+// Slave → master: outcome of a MultiFire.
+// success is true only if every requested slot pulsed.
+message FireResponse {
+  uint32          device_id    = 1;
+  uint32          action_id    = 2;
+  repeated uint32 slots_fired  = 3;
+  repeated uint32 slots_failed = 4;
+  bool            success      = 5;
+}
+
+// Master → slave: return a list of slots to IDLE.
+// Empty slots list resets every slot on the device.
 message Reset {
-  uint32 slot      = 1;   // 0 = all slots on device_id
-  uint32 device_id = 2;
-  uint32 action_id = 3;
+  uint32          device_id = 1;
+  uint32          action_id = 2;
+  repeated uint32 slots     = 3;
 }
+
+// Slave-originated error (e.g. failed to send a response).
+message Error { uint32 device_id = 1; }
 
 message Envelope {
   uint32 seq = 1;
   oneof payload {
-    Ping     ping     = 10;
-    Pong     pong     = 11;
-    Arm      arm      = 12;
-    Armed    armed    = 13;
-    Disarmed disarmed = 14;
-    Fire     fire     = 15;
-    Fired    fired    = 16;
-    Reset    reset    = 17;
-    Misfired misfired = 18;
-    Nack     nack     = 19;
-    Error    error    = 20;
+    Ping         ping          = 10;
+    Pong         pong          = 11;
+    MultiArm     multi_arm     = 12;
+    ArmResponse  arm_response  = 13;
+    MultiFire    multi_fire    = 15;
+    FireResponse fire_response = 16;
+    Reset        reset         = 17;
+    Error        error         = 20;
   }
 }

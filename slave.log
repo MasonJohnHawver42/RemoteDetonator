@@ -1,0 +1,485 @@
+[bat] raw=917 vbat=3.84
+[bat] raw=918 vbat=3.85
+[bat] raw=917 vbat=3.84
+[bat] raw=918 vbat=3.85
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-37.0
+[lml] poll: decoded type=1 seq=9 frag=0/1
+[lml] poll: dispatch evtype=0 state=0
+[lml] onStandby: PacketRx type=1
+[lml] onStandby: got RTS → sending CTS
+[lml] transmit type=2 seq=9 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=3
+[lml] onStandby: → PendingCmd
+[bat] raw=918 vbat=3.85
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=19 rssi=-36.0
+[lml] poll: decoded type=4 seq=9 frag=0/1
+[lml] poll: dispatch evtype=0 state=3
+[lml] onPendingCmd: PacketRx type=4 seq=9 frag=0/1
+[lml] onPendingCmd: feed result=0 msg.len=11
+[lml] onPendingCmd: sending ACK seq=9 frag=0
+[lml] transmit type=5 seq=9 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] onPendingCmd: message complete len=11 → push+toStandby
+[lml] pushApp: Message len=11
+[lml] toStandby (was state=3 retries=0)
+[slave] RESET slot 1 → IDLE
+[lml] stopTimer state=3
+[bat] raw=919 vbat=3.85
+[bat] raw=918 vbat=3.85
+[bat] raw=918 vbat=3.85
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-29.0
+[lml] poll: decoded type=1 seq=10 frag=0/1
+[lml] poll: dispatch evtype=0 state=0
+[lml] onStandby: PacketRx type=1
+[lml] onStandby: got RTS → sending CTS
+[lml] transmit type=2 seq=10 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=3
+[lml] onStandby: → PendingCmd
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=26 rssi=-31.0
+[lml] poll: decoded type=4 seq=10 frag=0/1
+[lml] poll: dispatch evtype=0 state=3
+[lml] onPendingCmd: PacketRx type=4 seq=10 frag=0/1
+[lml] onPendingCmd: feed result=0 msg.len=18
+[lml] onPendingCmd: sending ACK seq=10 frag=0
+[lml] transmit type=5 seq=10 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] onPendingCmd: message complete len=18 → push+toStandby
+[lml] pushApp: Message len=18
+[lml] toStandby (was state=3 retries=0)
+[slave] slot 1 ARMED act 23 tmo=22000ms
+[lml] stopTimer state=3
+[slave] slot 2 ARMED act 23 tmo=22000ms
+[slave] slot 3 ARMED act 23 tmo=22000ms
+[slave] slot 4 ARMED act 23 tmo=22000ms
+[lml] queue_tx len=16
+[lml] queue_tx result=0
+[lml] poll: Standby+TX pending — sending RTS
+[lml] transmit type=1 seq=0 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=1
+[lml] poll: → PendingCTS
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-38.0
+[lml] poll: decoded type=2 seq=0 frag=0/1
+[lml] poll: dispatch evtype=0 state=1
+[lml] onPendingCTS: PacketRx type=2
+[lml] onPendingCTS: CTS received — sending first DATA frag
+[lml] stopTimer state=1
+[lml] transmit type=4 seq=0 frag=0/1 len=16 frameLen=24
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=2
+[lml] onPendingCTS: → PendingCmdAck
+[bat] raw=919 vbat=3.85
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-41.0
+[lml] poll: decoded type=5 seq=0 frag=0/1
+[lml] poll: dispatch evtype=0 state=2
+[lml] onPendingCmdAck: PacketRx type=5 seq=0 frag=0 (want seq=0 frag=0)
+[lml] onPendingCmdAck: ACK matched — advance
+[lml] stopTimer state=2
+[lml] onPendingCmdAck: TX done → toStandby
+[lml] toStandby (was state=2 retries=0)
+[lml] stopTimer state=2
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-40.0
+[lml] poll: decoded type=1 seq=11 frag=0/1
+[lml] poll: dispatch evtype=0 state=0
+[lml] onStandby: PacketRx type=1
+[lml] onStandby: got RTS → sending CTS
+[lml] transmit type=2 seq=11 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=3
+[lml] onStandby: → PendingCmd
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=22 rssi=-40.0
+[lml] poll: decoded type=4 seq=11 frag=0/1
+[lml] poll: dispatch evtype=0 state=3
+[lml] onPendingCmd: PacketRx type=4 seq=11 frag=0/1
+[lml] onPendingCmd: feed result=0 msg.len=14
+[lml] onPendingCmd: sending ACK seq=11 frag=0
+[lml] transmit type=5 seq=11 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] onPendingCmd: message complete len=14 → push+toStandby
+[lml] pushApp: Message len=14
+[lml] toStandby (was state=3 retries=0)
+[fire] slot 1 start  seq+9us
+[lml] stopTimer state=3
+[bat] raw=920 vbat=3.85
+[fire] slot 1 done   pulse=1200052us
+[fire] gap done  next slot in 200000us
+[fire] slot 2 start  seq+1409508us
+[fire] slot 2 done   pulse=1200017us
+[fire] gap done  next slot in 200000us
+[fire] slot 3 start  seq+2809649us
+[bat] raw=920 vbat=3.85
+[fire] slot 3 done   pulse=1200047us
+[fire] gap done  next slot in 200000us
+[fire] slot 4 start  seq+4209838us
+[fire] slot 4 done   pulse=1200017us
+[fire] sequence complete total=5409978us slots=4
+[lml] queue_tx len=17
+[lml] queue_tx result=0
+[lml] poll: Standby+TX pending — sending RTS
+[lml] transmit type=1 seq=1 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=1
+[lml] poll: → PendingCTS
+[bat] raw=920 vbat=3.85
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-41.0
+[lml] poll: decoded type=2 seq=1 frag=0/1
+[lml] poll: dispatch evtype=0 state=1
+[lml] onPendingCTS: PacketRx type=2
+[lml] onPendingCTS: CTS received — sending first DATA frag
+[lml] stopTimer state=1
+[lml] transmit type=4 seq=1 frag=0/1 len=17 frameLen=25
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=2
+[lml] onPendingCTS: → PendingCmdAck
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-42.0
+[lml] poll: decoded type=5 seq=1 frag=0/1
+[lml] poll: dispatch evtype=0 state=2
+[lml] onPendingCmdAck: PacketRx type=5 seq=1 frag=0 (want seq=1 frag=0)
+[lml] onPendingCmdAck: ACK matched — advance
+[lml] stopTimer state=2
+[lml] onPendingCmdAck: TX done → toStandby
+[lml] toStandby (was state=2 retries=0)
+[lml] stopTimer state=2
+[bat] raw=920 vbat=3.85
+[bat] raw=920 vbat=3.85
+[bat] raw=920 vbat=3.85
+[bat] raw=920 vbat=3.85
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-33.0
+[lml] poll: decoded type=1 seq=12 frag=0/1
+[lml] poll: dispatch evtype=0 state=0
+[lml] onStandby: PacketRx type=1
+[lml] onStandby: got RTS → sending CTS
+[lml] transmit type=2 seq=12 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=3
+[lml] onStandby: → PendingCmd
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=26 rssi=-33.0
+[lml] poll: decoded type=4 seq=12 frag=0/1
+[lml] poll: dispatch evtype=0 state=3
+[lml] onPendingCmd: PacketRx type=4 seq=12 frag=0/1
+[lml] onPendingCmd: feed result=0 msg.len=18
+[lml] onPendingCmd: sending ACK seq=12 frag=0
+[lml] transmit type=5 seq=12 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] onPendingCmd: message complete len=18 → push+toStandby
+[lml] pushApp: Message len=18
+[lml] toStandby (was state=3 retries=0)
+[lml] queue_tx len=14
+[lml] stopTimer state=3
+[lml] queue_tx result=0
+[lml] poll: Standby+TX pending — sending RTS
+[lml] transmit type=1 seq=2 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=1
+[lml] poll: → PendingCTS
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-28.0
+[lml] poll: decoded type=2 seq=2 frag=0/1
+[lml] poll: dispatch evtype=0 state=1
+[lml] onPendingCTS: PacketRx type=2
+[lml] onPendingCTS: CTS received — sending first DATA frag
+[lml] stopTimer state=1
+[lml] transmit type=4 seq=2 frag=0/1 len=14 frameLen=22
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=2
+[lml] onPendingCTS: → PendingCmdAck
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-28.0
+[lml] poll: decoded type=5 seq=2 frag=0/1
+[lml] poll: dispatch evtype=0 state=2
+[lml] onPendingCmdAck: PacketRx type=5 seq=2 frag=0 (want seq=2 frag=0)
+[lml] onPendingCmdAck: ACK matched — advance
+[lml] stopTimer state=2
+[lml] onPendingCmdAck: TX done → toStandby
+[lml] toStandby (was state=2 retries=0)
+[lml] stopTimer state=2
+[bat] raw=921 vbat=3.86
+[bat] raw=920 vbat=3.85
+[bat] raw=920 vbat=3.85
+[bat] raw=920 vbat=3.85
+[bat] raw=920 vbat=3.85
+[bat] raw=921 vbat=3.86
+[bat] raw=920 vbat=3.85
+[bat] raw=921 vbat=3.86
+[bat] raw=921 vbat=3.86
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-34.0
+[lml] poll: decoded type=1 seq=13 frag=0/1
+[lml] poll: dispatch evtype=0 state=0
+[lml] onStandby: PacketRx type=1
+[lml] onStandby: got RTS → sending CTS
+[lml] transmit type=2 seq=13 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=3
+[lml] onStandby: → PendingCmd
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=19 rssi=-35.0
+[lml] poll: decoded type=4 seq=13 frag=0/1
+[lml] poll: dispatch evtype=0 state=3
+[lml] onPendingCmd: PacketRx type=4 seq=13 frag=0/1
+[lml] onPendingCmd: feed result=0 msg.len=11
+[lml] onPendingCmd: sending ACK seq=13 frag=0
+[lml] transmit type=5 seq=13 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] onPendingCmd: message complete len=11 → push+toStandby
+[lml] pushApp: Message len=11
+[lml] toStandby (was state=3 retries=0)
+[slave] RESET slot 1 → IDLE
+[lml] stopTimer state=3
+[bat] raw=921 vbat=3.86
+[bat] raw=921 vbat=3.86
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-36.0
+[lml] poll: decoded type=1 seq=14 frag=0/1
+[lml] poll: dispatch evtype=0 state=0
+[lml] onStandby: PacketRx type=1
+[lml] onStandby: got RTS → sending CTS
+[lml] transmit type=2 seq=14 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=3
+[lml] onStandby: → PendingCmd
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=24 rssi=-28.0
+[lml] poll: decoded type=4 seq=14 frag=0/1
+[lml] poll: dispatch evtype=0 state=3
+[lml] onPendingCmd: PacketRx type=4 seq=14 frag=0/1
+[lml] onPendingCmd: feed result=0 msg.len=16
+[lml] onPendingCmd: sending ACK seq=14 frag=0
+[lml] transmit type=5 seq=14 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] onPendingCmd: message complete len=16 → push+toStandby
+[lml] pushApp: Message len=16
+[lml] toStandby (was state=3 retries=0)
+[lml] queue_tx len=12
+[lml] queue_tx result=0
+[lml] stopTimer state=3
+[lml] poll: Standby+TX pending — sending RTS
+[lml] transmit type=1 seq=3 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=1
+[lml] poll: → PendingCTS
+[bat] raw=921 vbat=3.86
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-30.0
+[lml] poll: decoded type=2 seq=3 frag=0/1
+[lml] poll: dispatch evtype=0 state=1
+[lml] onPendingCTS: PacketRx type=2
+[lml] onPendingCTS: CTS received — sending first DATA frag
+[lml] stopTimer state=1
+[lml] transmit type=4 seq=3 frag=0/1 len=12 frameLen=20
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=2
+[lml] onPendingCTS: → PendingCmdAck
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-31.0
+[lml] poll: decoded type=5 seq=3 frag=0/1
+[lml] poll: dispatch evtype=0 state=2
+[lml] onPendingCmdAck: PacketRx type=5 seq=3 frag=0 (want seq=3 frag=0)
+[lml] onPendingCmdAck: ACK matched — advance
+[lml] stopTimer state=2
+[lml] onPendingCmdAck: TX done → toStandby
+[lml] toStandby (was state=2 retries=0)
+[lml] stopTimer state=2
+[bat] raw=921 vbat=3.86
+[bat] raw=921 vbat=3.86
+[bat] raw=921 vbat=3.86
+[bat] raw=922 vbat=3.86
+[bat] raw=921 vbat=3.86
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-34.0
+[lml] poll: decoded type=1 seq=15 frag=0/1
+[lml] poll: dispatch evtype=0 state=0
+[lml] onStandby: PacketRx type=1
+[lml] onStandby: got RTS → sending CTS
+[lml] transmit type=2 seq=15 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=3
+[lml] onStandby: → PendingCmd
+[bat] raw=921 vbat=3.86
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=23 rssi=-34.0
+[lml] poll: decoded type=4 seq=15 frag=0/1
+[lml] poll: dispatch evtype=0 state=3
+[lml] onPendingCmd: PacketRx type=4 seq=15 frag=0/1
+[lml] onPendingCmd: feed result=0 msg.len=15
+[lml] onPendingCmd: sending ACK seq=15 frag=0
+[lml] transmit type=5 seq=15 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] onPendingCmd: message complete len=15 → push+toStandby
+[lml] pushApp: Message len=15
+[lml] toStandby (was state=3 retries=0)
+[lml] queue_tx len=11
+[lml] queue_tx result=0
+[lml] stopTimer state=3
+[lml] poll: Standby+TX pending — sending RTS
+[lml] transmit type=1 seq=4 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=1
+[lml] poll: → PendingCTS
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-34.0
+[lml] poll: decoded type=2 seq=4 frag=0/1
+[lml] poll: dispatch evtype=0 state=1
+[lml] onPendingCTS: PacketRx type=2
+[lml] onPendingCTS: CTS received — sending first DATA frag
+[lml] stopTimer state=1
+[lml] transmit type=4 seq=4 frag=0/1 len=11 frameLen=19
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=2
+[lml] onPendingCTS: → PendingCmdAck
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-35.0
+[lml] poll: decoded type=5 seq=4 frag=0/1
+[lml] poll: dispatch evtype=0 state=2
+[lml] onPendingCmdAck: PacketRx type=5 seq=4 frag=0 (want seq=4 frag=0)
+[lml] onPendingCmdAck: ACK matched — advance
+[lml] stopTimer state=2
+[lml] onPendingCmdAck: TX done → toStandby
+[lml] toStandby (was state=2 retries=0)
+[lml] stopTimer state=2
+[bat] raw=921 vbat=3.86
+[bat] raw=922 vbat=3.86
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=8 rssi=-35.0
+[lml] poll: decoded type=1 seq=16 frag=0/1
+[lml] poll: dispatch evtype=0 state=0
+[lml] onStandby: PacketRx type=1
+[lml] onStandby: got RTS → sending CTS
+[lml] transmit type=2 seq=16 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] startTimer 500ms state=3
+[lml] onStandby: → PendingCmd
+[lml] poll: ISR flag set — reading radio
+[lml] poll: readData st=0 pktLen=19 rssi=-34.0
+[lml] poll: decoded type=4 seq=16 frag=0/1
+[lml] poll: dispatch evtype=0 state=3
+[lml] onPendingCmd: PacketRx type=4 seq=16 frag=0/1
+[lml] onPendingCmd: feed result=0 msg.len=11
+[lml] onPendingCmd: sending ACK seq=16 frag=0
+[lml] transmit type=5 seq=16 frag=0/1 len=0 frameLen=8
+[lml] transmit done radio_state=0 → startReceive
+[lml] onPendingCmd: message complete len=11 → push+toStandby
+[lml] pushApp: Message len=11
+[lml] toStandby (was state=3 retries=0)
+[slave] RESET slot 1 → IDLE
+[lml] stopTimer state=3
+[bat] raw=922 vbat=3.86
+[bat] raw=922 vbat=3.86
+[bat] raw=922 vbat=3.86
+[bat] raw=922 vbat=3.86
+[bat] raw=922 vbat=3.86
+[bat] raw=922 vbat=3.86
+[bat] raw=922 vbat=3.86
+[bat] raw=922 vbat=3.86
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=922 vbat=3.86
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=923 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=924 vbat=3.87
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=924 vbat=3.87
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=925 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=926 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=927 vbat=3.88
+[bat] raw=927 vbat=3.88
